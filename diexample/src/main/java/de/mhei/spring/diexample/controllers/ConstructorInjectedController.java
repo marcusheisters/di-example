@@ -1,15 +1,20 @@
 package de.mhei.spring.diexample.controllers;
 
 import de.mhei.spring.diexample.services.GreetingService;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
 
 /**
  * @author marcusheisters
  */
+@Controller
 public class ConstructorInjectedController {
 
     private final GreetingService greetingService;
 
-    public ConstructorInjectedController(GreetingService greetingService) {
+    public ConstructorInjectedController(
+            @Qualifier("greetingServiceImpl") GreetingService greetingService)
+    {
         this.greetingService = greetingService;
     }
 
