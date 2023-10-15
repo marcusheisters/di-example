@@ -1,10 +1,12 @@
 package de.mhei.spring.diexample.controllers;
 
 import de.mhei.spring.diexample.services.GreetingService;
+import org.springframework.stereotype.Controller;
 
 /**
  * @author marcusheisters
  */
+@Controller
 public class ConstructorInjectedController {
 
     private final GreetingService greetingService;

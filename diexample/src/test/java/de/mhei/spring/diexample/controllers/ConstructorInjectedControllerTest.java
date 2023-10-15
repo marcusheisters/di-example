@@ -4,22 +4,21 @@ import de.mhei.spring.diexample.services.GreetingService;
 import de.mhei.spring.diexample.services.GreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @author marcusheisters
  */
+@SpringBootTest
 class ConstructorInjectedControllerTest {
 
-    GreetingService greetingService;
+    @Autowired
     ConstructorInjectedController controller;
 
     @BeforeEach
-    void setUp() {
-        greetingService = new GreetingServiceImpl();
-        controller = new ConstructorInjectedController(greetingService);
-    }
 
     @Test
     void sayHello() {
