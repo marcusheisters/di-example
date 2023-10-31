@@ -2,6 +2,7 @@ package de.mhei.spring.diexample.controllers;
 
 import de.mhei.spring.diexample.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class PropertyInjectedController {
 
+    @Qualifier("greetingServicePropertyInjection")
     @Autowired
     GreetingService greetingService;
 
