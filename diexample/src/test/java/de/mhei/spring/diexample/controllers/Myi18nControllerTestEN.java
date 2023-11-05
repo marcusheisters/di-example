@@ -10,8 +10,7 @@ import org.springframework.test.context.ActiveProfiles;
  */
 @ActiveProfiles("EN")
 @SpringBootTest
-class
-Myi18nControllerTestEN {
+class Myi18NControllerTestEN {
 
     @Autowired
     Myi18NController myi18NController;
