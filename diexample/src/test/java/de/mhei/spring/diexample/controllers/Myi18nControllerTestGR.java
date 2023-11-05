@@ -8,9 +8,9 @@ import org.springframework.test.context.ActiveProfiles;
 /**
  * @author marcusheisters
  */
-@ActiveProfiles("GR")
+@ActiveProfiles({"GR", "dev"})
 @SpringBootTest
-public class Myi18NControllerTestGR {
+class Myi18NControllerTestGR {
 
     @Autowired
     Myi18NController myi18NController;
