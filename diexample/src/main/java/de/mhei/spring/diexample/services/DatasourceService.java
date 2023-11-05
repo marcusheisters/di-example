@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 /**
  * @author marcusheisters
  */
-public interface GreetingService {
+public interface DatasourceService {
 
-    String sayGreeting();
+    String getDatasource();
 }
