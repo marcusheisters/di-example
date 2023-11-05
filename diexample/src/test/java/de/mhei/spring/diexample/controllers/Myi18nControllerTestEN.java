@@ -8,7 +8,7 @@ import org.springframework.test.context.ActiveProfiles;
 /**
  * @author marcusheisters
  */
-@ActiveProfiles("EN")
+@ActiveProfiles({"EN", "dev"})
 @SpringBootTest
 class Myi18NControllerTestEN {
 
